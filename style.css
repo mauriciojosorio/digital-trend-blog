@@ -109,3 +109,11 @@ img {
 .menu h2 {
   letter-spacing: 5px;
 }
+
+/* media queries */
+
+@media screen and (max-width: 360px) {
+  .menu {
+    display: none;
+  }
+}
