@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik-Light.ttf");
+}
+
+:root {
+  --netflix: #b5076b;
+  --regional: #27496d;
+  --trends: #00005c;
+}
+
+body {
+  font-family: "Rubik";
+  background-image: url("img/topography.svg"), linear-gradient(110deg, #45046a, #552791);
+  background-size: 200px, auto;
+  background-attachment: fixed;
+  color: wheat;
+}
+a {
+  color: wheat;
+}
+ul li {
+  margin-bottom: 7px;
+  list-style-type: none;
+}
+
+.card p {
+  line-height: 1.4;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+
+  width: 100%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 5px;
+}
+.description {
+  padding: 10px;
+}
+
+.movie-card,
+.trends-card,
+.regional-card {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding-left: 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.movie-card {
+  background: var(--netflix);
+}
+.trends-card {
+  background: var(--trends);
+}
+.regional-card {
+  background-color: var(--regional);
+}
+
+/* .container div:nth-child(odd) {
+  grid-row: span 2;
+} */
+
+.parent {
+  display: flex;
+
+  max-width: 2300px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 200px;
+  max-width: 300px;
+}
+.menu div {
+  height: 200px;
+  padding: 10px;
+
+  color: wheat;
+
+  text-align: center;
+}
+.menu span {
+  font-size: 0.8em;
+}
+.menu p {
+  /* line-height: 22px; */
+  font-size: 2em;
+}
+.menu h2 {
+  letter-spacing: 5px;
+}
